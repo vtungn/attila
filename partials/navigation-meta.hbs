@@ -1,5 +1,5 @@
 <ul class="nav-meta">
-  {{#if @site.twitter}}
+  {{!-- {{#if @site.twitter}}
   <li class="nav-twitter">
     <a aria-label="Twitter" href="{{twitter_url}}" title="{{@site.twitter}}" target="_blank">
       <i class="icon icon-twitter" aria-hidden="true"></i>
@@ -14,22 +14,27 @@
       <span>{{@site.facebook}}</span>
     </a>
   </li>
-  {{/if}}
+  {{/if}} --}}
   <li class="nav-search" style="display: none;">
     <a title="{{t "Search"}}">
       <i class="icon icon-search" aria-hidden="true"></i>
       <span>{{t "Search"}}</span>
     </a>
   </li>
-  <!--
-  {{#unless @member}}
-    <li class="nav-subscribe">
-      <a href="#/portal">Subscribe</a>
-    </li>
+  <span class="nav-credits" style="align-self: center;">
+    <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
+      <span class="theme-icon"></span>
+      <span class="theme-text">System theme</span> </a>
+  </span>
+
+  {{!-- {{#unless @member}}
+  <li class="nav-subscribe">
+    <a href="#/portal">Subscribe</a>
+  </li>
   {{else}}
-    <li class="nav-account">
-      <a href="#/portal/account">Account</a>
-    </li>
-  {{/unless}}
-  -->
+  <li class="nav-account">
+    <a href="#/portal/account">Account</a>
+  </li>
+  {{/unless}} --}}
+
 </ul>
